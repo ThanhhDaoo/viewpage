@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trang thứ hai"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Card hiển thị thông tin -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin của bạn"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#34495E"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Hiển thị tên -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tên: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#7F8C8D"/>
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="..."
+                        android:textSize="16sp"
+                        android:textColor="#2C3E50"/>
+
+                </LinearLayout>
+
+                <!-- Hiển thị email -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email: "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#7F8C8D"/>
+
+                    <TextView
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="..."
+                        android:textSize="16sp"
+                        android:textColor="#2C3E50"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ImageView minh họa -->
+        <ImageView
+            android:id="@+id/imageViewDemo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp"/>
+
+        <!-- Mô tả 1 -->
+        <TextView
+            android:id="@+id/textViewDesc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chào mừng bạn đến với ứng dụng của chúng tôi!"
+            android:textSize="16sp"
+            android:textColor="#34495E"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Mô tả 2 -->
+        <TextView
+            android:id="@+id/textViewDesc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đây là trang thứ hai hiển thị thông tin bạn đã nhập. Bạn có thể quay lại trang trước bằng cách nhấn nút bên dưới."
+            android:textSize="16sp"
+            android:textColor="#34495E"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Button Quay lại -->
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Quay lại"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#E74C3C"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
